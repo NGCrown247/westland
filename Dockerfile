@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
     zip
 
 # Install PHP extensions
-RUN docker-php-ext-install pdo pdo_mysql zip
+RUN docker-php-ext-install pdo pdo_mysql pdo_sqlite zip
 
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
@@ -20,11 +20,21 @@ WORKDIR /app
 # Copy project files
 COPY . .
 
-# Install Laravel dependencies
+# Install dependencies
 RUN composer install --no-dev --optimize-autoloader
+
+# ✅ Create SQLite database
+RUN touch /tmp/database.sqlite
+
+# ✅ Fix Laravel permissions
+RUN chmod -R 777 storage bootstrap/cache
+
+# ✅ Laravel setup
+RUN php artisan config:clear
+RUN php artisan config:cache
 
 # Expose port
 EXPOSE 10000
 
-# Start Laravel server
+# Start server
 CMD php artisan serve --host=0.0.0.0 --port=10000
