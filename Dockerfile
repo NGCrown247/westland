@@ -12,9 +12,6 @@ COPY . .
 
 RUN composer install --no-dev --optimize-autoloader
 
-# 🔑 generate app key
-RUN php artisan key:generate
-
 # SQLite
 RUN mkdir -p /tmp && touch /tmp/database.sqlite
 
