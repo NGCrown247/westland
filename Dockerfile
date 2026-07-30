@@ -14,7 +14,7 @@ COPY . .
 ARG APP_KEY
 ENV APP_KEY=$APP_KEY
 
-RUN composer install --no-dev --optimize-autoloader
+RUN composer install --no-dev --optimize-autoloader --no-scripts
 
 # SQLite
 RUN mkdir -p /tmp && touch /tmp/database.sqlite
