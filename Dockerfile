@@ -10,11 +10,7 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 WORKDIR /app
 COPY . .
 
-# Define build argument for the app key
-ARG APP_KEY
-ENV APP_KEY=$APP_KEY
-
-RUN composer install --no-dev --optimize-autoloader --no-scripts
+RUN composer install --no-dev --optimize-autoloader
 
 # SQLite
 RUN mkdir -p /tmp && touch /tmp/database.sqlite
