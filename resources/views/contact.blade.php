@@ -196,9 +196,9 @@
                             </div>
                             <div>
                                 <h3 class="font-semibold text-west-off-dark">Phone Number</h3>
-                             <p class="mt-5 text-2xl font-bold text-west-primary">
+                             <p class="mt-5 text-sm font-bold text-west-primary">
                              +2349122644154<br>+2349030588284
-                        </p>   
+                        </p>
                             </div>
                         </div>
 
