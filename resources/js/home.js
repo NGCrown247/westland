@@ -6,6 +6,7 @@ export default function Home() {
         revealed: [],
         countersStarted: false,
         servicesDropdown: false,
+        openSidebar: false,
 
         slides: [
             '/images/west-h-img1.png',
@@ -21,12 +22,26 @@ export default function Home() {
             support: 0,
         },
 
-        init() {
-            this.revealed = [];
 
+
+
+
+        init() {
+
+
+            this.$watch('openSidebar', value => {
+                document.body.style.overflow = value ? 'hidden' : '';
+            });
+
+            this.revealed = [];
             window.addEventListener('scroll', () => {
                 this.scrolled = window.scrollY > 50;
             });
+
+
+
+
+
 
             setInterval(() => {
                 this.active = (this.active + 1) % this.slides.length;
@@ -94,5 +109,12 @@ export default function Home() {
             this.animateValue('coverage', 100, 1200);
             this.animateValue('support', 24, 1000);
         },
+
+
+
+
+
     };
+
 }
+

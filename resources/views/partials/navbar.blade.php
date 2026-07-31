@@ -1,4 +1,4 @@
-<nav x-data="home" @click.away="servicesDropdown = false"
+<nav  @click.away="servicesDropdown = false"
     :class="scrolled
         ? 'fixed top-0 left-0 w-full bg-west-white shadow-md border-b border-west-border'
         : 'absolute top-0 left-0 w-full border-b border-west-white/10'"
@@ -120,6 +120,7 @@
             {{-- Mobile --}}
             <div class="md:hidden">
                 <button type="button"
+                @click="openSidebar = true"
                     :class="scrolled
                         ? 'cursor-pointer text-west-off-dark hover:bg-west-off-dark/10 rounded transition duration-300 p-1'
                         : 'cursor-pointer text-west-white hover:bg-west-white/10 rounded transition duration-300 p-1'">

@@ -1,15 +1,18 @@
 {{-- HOME FILE --}}
 
+
+
 @extends('layouts.app')
 
 @section('content')
 
     @include('partials.navbar')
+    @include('partials.sidebar')
 
     @include('partials.hero')
 
 
-<section x-data="home" class="bg-west-bg py-20">
+<section class="bg-west-bg py-20" x-init="init()">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         {{-- Section header --}}
@@ -49,3 +52,5 @@
     @include('partials.cta')
     @include('partials.footer')
 @endsection
+
+

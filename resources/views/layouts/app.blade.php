@@ -7,7 +7,7 @@
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="bg-west-bg text-west-text font-sans">
+<body  x-data="home()" x-init="init()" class="bg-west-bg text-west-text font-sans">
 
     @yield('content')
 
