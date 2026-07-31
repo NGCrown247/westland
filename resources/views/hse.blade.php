@@ -4,6 +4,8 @@
 
 @section('content')
     @include('partials.navbar')
+    @include('partials.sidebar')
+
 
     {{-- HERO --}}
  <section x-data="home" class="relative overflow-hidden">

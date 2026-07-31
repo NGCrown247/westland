@@ -2,6 +2,8 @@
 
 @section('content')
 @include('partials.navbar')
+    @include('partials.sidebar')
+
 
 <section x-data="home" class="relative overflow-hidden">
     <img
