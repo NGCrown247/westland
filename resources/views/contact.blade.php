@@ -173,10 +173,10 @@
                             </div>
                             <div>
                                 <h3 class="font-semibold text-west-off-dark">Office Address</h3>
-                                <p class="mt-1 text-west-text-muted leading-6">
-                                    Plot 14, Trans-Amadi Industrial Layout,<br>
-                                    Port Harcourt, Rivers State, Nigeria
-                                </p>
+                               <p>
+                            #50 Abec Road Nvuigwe, Woji,<br>
+                            Port Harcourt, Rivers State
+                        </p>
                             </div>
                         </div>
 
@@ -196,10 +196,9 @@
                             </div>
                             <div>
                                 <h3 class="font-semibold text-west-off-dark">Phone Number</h3>
-                                <p class="mt-1 text-west-text-muted leading-6">
-                                    +234 (0) 84 000 000<br>
-                                    +234 (0) 80 000 000
-                                </p>
+                             <p class="mt-5 text-2xl font-bold text-west-primary">
+                             +2349122644154<br>+2349030588284
+                        </p>   
                             </div>
                         </div>
 
@@ -219,10 +218,7 @@
                             </div>
                             <div>
                                 <h3 class="font-semibold text-west-off-dark">Email Address</h3>
-                                <p class="mt-1 text-west-text-muted leading-6">
-                                    info@westlandsolution.com<br>
-                                    sales@westlandsolution.com
-                                </p>
+                                 <p>westlandsolution.ng@gmail.com</p>
                             </div>
                         </div>
 
@@ -267,7 +263,7 @@
                         </p>
 
                         <p class="mt-5 text-2xl font-bold text-west-primary">
-                            +234 (0) 80 123 4567
+                             +2349122644154
                         </p>
                     </div>
 
