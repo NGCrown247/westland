@@ -66,19 +66,19 @@
                     <div class="flex items-start gap-3 tracking-wide">
                         <span class="text-west-primary">📍</span>
                         <p>
-                            Plot 14, Trans-Amadi Industrial Layout,<br>
-                            Port Harcourt, Rivers State, Nigeria
+                            #50 ABEC Street,<br>
+                            Port Harcourt, Rivers State
                         </p>
                     </div>
 
                     <div class="flex items-center gap-3">
                         <span class="text-west-primary">📞</span>
-                        <p>+234 (0) 84 000 000</p>
+                        <p>+2349122644154<br>+2349030588284  </p>
                     </div>
 
                     <div class="flex items-center gap-3 tracking-wide">
                         <span class="text-west-primary">✉️</span>
-                        <p>info@westlandsolution.com</p>
+                        <p>westlandsolution.ng@gmail.com</p>
                     </div>
 
                 </div>
