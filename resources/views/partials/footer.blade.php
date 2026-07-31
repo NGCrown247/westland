@@ -66,7 +66,7 @@
                     <div class="flex items-start gap-3 tracking-wide">
                         <span class="text-west-primary">📍</span>
                         <p>
-                            #50 ABEC Street,<br>
+                            #50 Abec Road Nvuigwe, Woji,<br>
                             Port Harcourt, Rivers State
                         </p>
                     </div>
