@@ -19,14 +19,7 @@
     <!-- Header -->
     <div class="flex items-center z-60 bg-west-white sticky top-0 justify-between px-5 py-4 border-b border-west-border">
         @include('partials.logo')
-        <button @click="openSidebar = false" class="text-west-dark hover:text-west-primary">
-            <!-- close icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                 stroke-width="1.5" stroke="currentColor" class="size-5">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                      d="M6 18L18 6M6 6l12 12" />
-            </svg>
-        </button>
+       
     </div>
 
     <!-- Links -->
